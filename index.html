@@ -7,16 +7,18 @@
   <title>Dolores.shop</title>
   <link rel="stylesheet" type="text/css" href="styles/header.css">
   <link rel="stylesheet" type="text/css" href="styles/general.css">
-  <link rel="stylesheet" type="text/css" href="styles/noodles.css">
-  <link rel="stylesheet" type="text/css" href="styles/valuemeal.css">
+  <link rel="stylesheet" type="text/css" href="styles/menu.css">
+  <link rel="stylesheet" type="text/css" href="styles/authentication.css">
+ 
 </head>
 <body>
+  <!--Header Nav-->
 <div class="header">
   
   <div class="mid-header">
 
     <div class="mid-left-sec">
-      <a href="#"><img class="Logo"src="Logo/DoloresLogo.png" alt=""></a>
+      <img class="Logo"src="Logo/DoloresLogo.png" alt="">
     </div>
 
     <div class="mid-middle-sec">
@@ -31,17 +33,55 @@
         <img class="cart-icon" src="icon/cart.png">
         <span class="tooltip-text">Cart</span>
       </button> 
-      <button class="profile-pic-btn">
-        <img class="profile-icon" src="icon/Profile1.png">
-        <span class="tooltip-text">Profile</span>
+      <button id="profile-pic-btn"class="profile-pic-btn">
+        <img class="profile-icon" src="icon/Profile.png">
+        <span class="tooltip-text">SignIn</span>
       </button>  
       <button class="sign-out-btn">
         <img class="sign-out-icon" src="icon/LogOut.png">
-        <span class="tooltip-text">Profile</span>
+        <span class="tooltip-text">SignOut</span>
       </button>
     </div>
   </div>
 </div>
+
+<!--Authentication-->
+<!--Module 1 Sub Module 1-->
+<div class="auth-popup">
+  <div class="auth-popup-content">
+    <div class="company-logo">
+      <img src="Logo/InvertedLogo.png" class="company-logo-img">
+    </div>
+    <button class="close-btn">
+      <img class="close-icon"src="icon/Close.png">
+    </button>
+    <div class="user-input">
+      <form class="sign-in">
+      
+        <label>Sign In</label>
+        <input class="email-txt"type="text"placeholder="Email"><br>
+        <input class="password-txt"type="password"placeholder="Password"><br>
+        <button class="log-in-btn">Sign In</button>
+        <a href="#" class="create-acc">Don't have an account? <span id="sign-up-btn">Sign Up</span></a>
+      </form> 
+
+
+      <!--Module 1 Sub Module 2-->
+      <form class="sign-up">
+        <label>Sign Up</label>
+        <input class="first-name" type="text" placeholder="First Name">
+        <input class="last-name" type="text" placeholder="Last Name">
+        <input class="email-txt"type="text"placeholder="Email"><br>
+        <input class="password-txt"type="password"placeholder="Password"><br>
+        <button class="log-in-btn">Sign Up</button>
+        <a href="#" class="create-acc">Already have account? <span id="sign-in-btn">Sign In</span></a>
+      </form> 
+      <script src="script/index.js"></script>
+    </div>
+  </div>
+</div>
+
+<!--Carousel-->
 
 <!--Menu-->
 <!--Value Meal-->
@@ -111,5 +151,139 @@
 </div>
 </div>
 
+
+<!--Sandwiches-->
+<div class="menu-meal-cat-txt">
+  <p class="category">Sandwiches</p>
+  <div class="menu-meal-container">
+    
+
+    <div class="menu-meal-mid">
+      <div class="menu-meal-info">
+        <img class="menu-meal-img" src="Menu/Sandwiches/Bacon.jfif">
+        <div class="menu-name">
+          <p class="menu-txt">Bacon w/ Egg Sandwich</p>
+          <p>&#8369; 40.00</p>
+        </div>
+        <div class="action-btn">
+          <button class="buy-btn">Buy Now!</button>
+          <button class="wish-btn">
+            <img class="wish-icon" src="icon/cart.png">
+          </button>
+        </div>
+      </div>
+
+      <div class="menu-meal-info">
+        <img class="menu-meal-img" src="Menu/Sandwiches/CheeseBurger.jpg">
+        <div class="menu-name">
+          <p class="menu-txt">Cheese Burger Sandwich</p>
+          <p>&#8369; 69.00</p>
+        </div>
+        <div class="action-btn">
+          <button class="buy-btn">Buy Now!</button>
+          <button class="wish-btn">
+            <img class="wish-icon" src="icon/cart.png">
+          </button>
+        </div>
+      </div>     
+
+      <div class="menu-meal-info">
+        <img class="menu-meal-img" src="Menu/Sandwiches/Clubhouse.jpg">
+        <div class="menu-name">
+          <p class="menu-txt">Clubhouse Sandwich</p>
+          <p>&#8369; 60.00</p>
+        </div>
+        <div class="action-btn">
+          <button class="buy-btn">Buy Now!</button>
+          <button class="wish-btn">
+            <img class="wish-icon" src="icon/cart.png">
+          </button>
+        </div>
+      </div>    
+      
+      <div class="menu-meal-info">
+        <img class="menu-meal-img" src="Menu/Sandwiches/EggSandwich.jpg">
+        <div class="menu-name">
+          <p class="menu-txt">Egg Sandwich</p>
+          <p>&#8369; 40.00</p>
+        </div>
+        <div class="action-btn">
+          <button class="buy-btn">Buy Now!</button>
+          <button class="wish-btn">
+            <img class="wish-icon" src="icon/cart.png">
+          </button>
+        </div>
+  
+    </div>
+  </div>
+</div>
+</div>
+
+<!--Noodles-->
+<div class="menu-meal-cat-txt">
+  <p class="category">Noddles</p>
+  <div class="menu-meal-container">
+    
+
+    <div class="menu-meal-mid">
+      <div class="menu-meal-info">
+        <img class="menu-meal-img" src="Menu/Noodles/pancitMalabonwithPuto.jpg">
+        <div class="menu-name">
+          <p class="menu-txt">Pancit Malabon With Puto</p>
+          <p>&#8369; 40.00</p>
+        </div>
+        <div class="action-btn">
+          <button class="buy-btn">Buy Now!</button>
+          <button class="wish-btn">
+            <img class="wish-icon" src="icon/cart.png">
+          </button>
+        </div>
+      </div>
+
+      <div class="menu-meal-info">
+        <img class="menu-meal-img" src="Menu/Noodles/Lomi.webp">
+        <div class="menu-name">
+          <p class="menu-txt">Pancit Lomi</p>
+          <p>&#8369; 69.00</p>
+        </div>
+        <div class="action-btn">
+          <button class="buy-btn">Buy Now!</button>
+          <button class="wish-btn">
+            <img class="wish-icon" src="icon/cart.png">
+          </button>
+        </div>
+      </div>     
+
+      <div class="menu-meal-info">
+        <img class="menu-meal-img" src="Menu/Noodles/Canton.jfif">
+        <div class="menu-name">
+          <p class="menu-txt">Pancit Canton</p>
+          <p>&#8369; 60.00</p>
+        </div>
+        <div class="action-btn">
+          <button class="buy-btn">Buy Now!</button>
+          <button class="wish-btn">
+            <img class="wish-icon" src="icon/cart.png">
+          </button>
+        </div>
+      </div>    
+      
+      <div class="menu-meal-info">
+        <img class="menu-meal-img" src="Menu/Noodles/Bihon.jfif">
+        <div class="menu-name">
+          <p class="menu-txt">Pancit Mike/Bihon</p>
+          <p>&#8369; 40.00</p>
+        </div>
+        <div class="action-btn">
+          <button class="buy-btn">Buy Now!</button>
+          <button class="wish-btn">
+            <img class="wish-icon" src="icon/cart.png">
+          </button>
+        </div>
+  
+    </div>
+  </div>
+</div>
+</div>
 </body>
 </html>
