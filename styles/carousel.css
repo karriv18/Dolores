@@ -1,0 +1,25 @@
+
+#slider{
+  margin:0 auto;
+  width: 950px;
+  max-width: 100%;
+  background-color: white;
+  text-align: center;
+}
+#slider input[type=radio]{
+  display: none;
+}
+#slide label{
+  cursor: pointer;
+  text-decoration: none;
+}
+#slides{
+  padding: 30px;
+  border: 3px solid #fff;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+}
+#overflow{
+  width: 100%;
+}
